@@ -1,0 +1,1 @@
+SS, eğlence amaçlı yazılmış discord botu.
