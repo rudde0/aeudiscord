@@ -21,16 +21,4 @@ client.on('guildMemberAdd', member => {
 	member.addRole(`761605971067797534`);
 });
 
-function clean(text) {
-    if (typeof(text) === "string")
-      return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
-    else
-        return text;
-}
-
-const events = {
-	MESSAGE_REACTION_ADD: 'messageReactionAdd',
-	MESSAGE_REACTION_REMOVE: 'messageReactionRemove',
-};
-
 client.login(process.env.bot_tokeni);
